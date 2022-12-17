@@ -1,0 +1,33 @@
+.container {
+    text-align: center;
+}
+
+section {
+    margin-top: 200px;
+    font-size: 5rem;
+}
+
+button {
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 1.5rem;
+}
+
+.decrease {
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+.reset {
+    background-color: blue;
+    color: white;
+    border: none;
+}
+
+.increase {
+    background-color: green;
+    color: white;
+    border: none;
+}
+
