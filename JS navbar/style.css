@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+nav .container {
+    background-color: lightblue;
+    padding: 10px 25px;
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-toggle {
+    height: 4vh;
+    border: none;
+    background: transparent;
+}
+
+.links {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s linear;
+}
+
+.show-links {
+    height: auto;
+    transition: all 0.3s linear;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+li{
+    margin-bottom: 15px;
+}
