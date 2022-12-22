@@ -1,27 +1,34 @@
 let quoteList = [];
 
-const btn = document.querySelector('button');
+const  quoteBtn = document.getElementById('quote-button');
 const quoteContent = document.querySelector('.quote');
 const authorContent = document.querySelector('.author')
-const tweetBtn = document.getElementById('tweet')
+const tweetBtn = document.getElementById('tweet-button')
 
 showQuote = () => {
     let randomNo = Math.floor(Math.random() * quoteList.length)
     quote = quoteList[randomNo].text;
     author = quoteList[randomNo].author;
-    quoteContent.textContent = quote;
+    console.log(quote.length)
     if(!author){
         authorContent.textContent = 'Unknown';
+    }else{
+        authorContent.textContent = author;
     }
-    authorContent.textContent = author;
+    if(quote.length > 130){
+        quoteContent.classList.add('long-quote')
+    }else{
+        quoteContent.classList.remove('long-quote')
+    }
+    quoteContent.textContent = quote;
 };
 
 tweetQuote = () => {
-    const tweetUrl = `https://twitter.com/intent/tweet?text=${quote} -${author}`;
+    const tweetUrl = `https://twitter.com/intent/tweet?text="${quote}" -${author}`;
     window.open(tweetUrl, '_blank');
 }
 
-btn.addEventListener('click', showQuote);
+quoteBtn.addEventListener('click', showQuote);
 tweetBtn.addEventListener('click',tweetQuote)
 
 
