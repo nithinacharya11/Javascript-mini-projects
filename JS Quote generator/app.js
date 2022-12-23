@@ -1,4 +1,6 @@
 let quoteList = [];
+let quote = 'The man who has no imagination has no wings.'
+let author = 'Muhammad Ali'
 
 const  quoteBtn = document.getElementById('quote-button');
 const quoteContent = document.querySelector('.quote');

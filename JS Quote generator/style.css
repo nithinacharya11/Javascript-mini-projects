@@ -71,3 +71,17 @@ main button {
 button:hover {
     padding: 15px 35px;
 }
+
+@media (max-width:600px) {
+    main .quote {
+        font-size: 20px !important;
+    }
+
+    main .author {
+        font-size:10px !important;
+    }
+
+    header .container {
+        width: 100%;
+    }
+}
